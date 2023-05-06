@@ -1,0 +1,130 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(24, 24, 24);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 1fr ;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 20px;
+}
+
+.counter-div {
+    padding: 15px;
+    border-radius: 20px;
+    background: rgb(102, 100, 218);
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.counter-div h2 {
+    padding: 20px;
+    color: rgb(27, 27, 27);
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    font-family: cursive;
+    margin: auto;
+    text-shadow: 1px 1px rgb(199, 198, 218);
+}
+
+.counter {
+    background-color: rgb(216, 216, 216);
+    color: rgb(24, 24, 24);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 4em;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+}
+
+/* Buttons */
+
+.button,.button-reload,.button-takeout,.button-x100 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1.5em;
+    background: rgb(27, 27, 27);
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 12px;
+    color: rgb(236, 236, 236);
+}
+
+.button, .button-reload {
+
+    width: 5vh;
+    height: 5vh;
+}
+
+.button-takeout {
+    width: 18vh;
+    height: 5vh;
+}
+
+.button-x100 {
+    width: 10vh;
+    height: 5vh;
+}
+
+.buttons {
+    padding: 20px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+:is(.button-x100:hover, .button:hover,.button-reload:hover,.button-takeout:hover ) {
+    transform: scale(1.05);
+    color: black;
+    
+}
+
+.button:hover {
+    background: rgb(168, 235, 148);
+}
+
+.button-reload:hover {
+    background: rgb(212, 72, 72);
+}
+
+.button-takeout:hover {
+    background: rgb(219, 235, 148);
+}
+
+.button-x100:hover {
+    background: rgb(49, 206, 114);
+}
+
+
+/* Alerts */
+
+.alert {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 2em;
+    font-family: monospace;
+    color: rgb(255, 91, 91);
+    opacity: 85%;
+}
+
+.ready {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 2em;
+    font-family: monospace;
+    color: rgb(148, 240, 145);
+    opacity: 85%;
+}
+
+/* My first project with JavaScript <3 */
