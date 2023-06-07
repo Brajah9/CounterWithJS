@@ -8,7 +8,7 @@ body, html {
 .container {
     display: grid;
     grid-template-rows: 100px 1fr ;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns:50px 1fr 50px;
     border-radius: 20px;
 }
 
@@ -17,7 +17,8 @@ body, html {
     border-radius: 20px;
     background: rgb(102, 100, 218);
     grid-row: 2/3;
-    grid-column: 2/3;
+    grid-column: 2/2;
+    
 }
 
 .counter-div h2 {
@@ -29,7 +30,7 @@ body, html {
     font-size: 3em;
     font-family: cursive;
     margin: auto;
-    text-shadow: 1px 1px rgb(199, 198, 218);
+    text-shadow: 1px 1px 8px rgb(199, 198, 218,0.5);
 }
 
 .counter {
@@ -39,8 +40,8 @@ body, html {
     padding: 20px;
     font-size: 4em;
     font-family: monospace;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+
 }
 
 /* Buttons */
@@ -90,18 +91,22 @@ body, html {
 
 .button:hover {
     background: rgb(168, 235, 148);
+    cursor: pointer;
 }
 
 .button-reload:hover {
     background: rgb(212, 72, 72);
+    cursor: pointer;
 }
 
 .button-takeout:hover {
     background: rgb(219, 235, 148);
+    cursor: pointer;
 }
 
 .button-x100:hover {
     background: rgb(49, 206, 114);
+    cursor: pointer;
 }
 
 
